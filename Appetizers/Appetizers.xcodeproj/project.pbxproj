@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		E0C43FF92B7A20D300C63082 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C43FF82B7A20D300C63082 /* AppetizersApp.swift */; };
-		E0C43FFB2B7A20D300C63082 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C43FFA2B7A20D300C63082 /* ContentView.swift */; };
+		E0C43FFB2B7A20D300C63082 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C43FFA2B7A20D300C63082 /* AppetizerTabView.swift */; };
 		E0C43FFD2B7A20D500C63082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C43FFC2B7A20D500C63082 /* Assets.xcassets */; };
 		E0C440002B7A20D500C63082 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C43FFF2B7A20D500C63082 /* Preview Assets.xcassets */; };
+		E0C440072B7A251A00C63082 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C440062B7A251A00C63082 /* AppetizerListView.swift */; };
+		E0C440092B7A254400C63082 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C440082B7A254400C63082 /* AccountView.swift */; };
+		E0C4400B2B7A255F00C63082 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4400A2B7A255F00C63082 /* OrderView.swift */; };
+		E0D6A5F12B7CEF70001A31E1 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6A5F02B7CEF70001A31E1 /* Appetizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E0C43FF52B7A20D300C63082 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C43FF82B7A20D300C63082 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
-		E0C43FFA2B7A20D300C63082 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E0C43FFA2B7A20D300C63082 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
 		E0C43FFC2B7A20D500C63082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0C43FFF2B7A20D500C63082 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E0C440062B7A251A00C63082 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		E0C440082B7A254400C63082 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		E0C4400A2B7A255F00C63082 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		E0D6A5F02B7CEF70001A31E1 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,13 @@
 			isa = PBXGroup;
 			children = (
 				E0C43FF82B7A20D300C63082 /* AppetizersApp.swift */,
-				E0C43FFA2B7A20D300C63082 /* ContentView.swift */,
+				E0C43FFA2B7A20D300C63082 /* AppetizerTabView.swift */,
+				E0C440062B7A251A00C63082 /* AppetizerListView.swift */,
+				E0C440082B7A254400C63082 /* AccountView.swift */,
+				E0C4400A2B7A255F00C63082 /* OrderView.swift */,
 				E0C43FFC2B7A20D500C63082 /* Assets.xcassets */,
 				E0C43FFE2B7A20D500C63082 /* Preview Content */,
+				E0D6A5F02B7CEF70001A31E1 /* Appetizer.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0C43FFB2B7A20D300C63082 /* ContentView.swift in Sources */,
+				E0D6A5F12B7CEF70001A31E1 /* Appetizer.swift in Sources */,
+				E0C440092B7A254400C63082 /* AccountView.swift in Sources */,
+				E0C43FFB2B7A20D300C63082 /* AppetizerTabView.swift in Sources */,
 				E0C43FF92B7A20D300C63082 /* AppetizersApp.swift in Sources */,
+				E0C440072B7A251A00C63082 /* AppetizerListView.swift in Sources */,
+				E0C4400B2B7A255F00C63082 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
