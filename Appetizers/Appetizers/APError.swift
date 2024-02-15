@@ -6,10 +6,12 @@
 //
 
 import Foundation
-enum APError:Error {
-    case invalidURL
-    case invalidResponse
-    case invalidData
-    case unableToComplete
-    
+
+// 'APError' enum'u, ağ işlemleri sırasında oluşabilecek hata durumlarını temsil eder.
+enum APError: Error {
+    case invalidURL          // Geçersiz URL hatası
+    case invalidResponse     // Geçersiz yanıt hatası
+    case invalidData         // Geçersiz veri hatası
+    case unableToComplete    // İşlem tamamlanamama hatası
 }
+

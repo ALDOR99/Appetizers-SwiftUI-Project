@@ -7,22 +7,30 @@
 
 import SwiftUI
 
+// 'AppetizerListView' yapısı, uygulamanın ana yemek listesini gösteren görünümü temsil eder.
 struct AppetizerListView: View {
+    
+    // Yemek listesini tutacak olan değişken.
     @State private var appetizers: [Appetizer] = []
+    
     var body: some View {
-        NavigationView{
-            List(MockData.appetizers ){ appetizer in
-               AppetizerListCell(appetizer: appetizer)
+        NavigationView {
+            // Yemek listesini gösteren 'List' yapısı.
+            List(MockData.appetizers) { appetizer in
+                // Her bir yemeği temsil eden 'AppetizerListCell' hücresini kullanır.
+                AppetizerListCell(appetizer: appetizer)
             }
-            .navigationTitle("🍟 Appetizers")
+            .navigationTitle("🍟 Appetizers") // Sayfanın başlığını belirler.
         }
-        .onAppear{
-            getAppetizers()
+        .onAppear {
+            getAppetizers() // Görünüm ilk kez görüntülendiğinde yemek listesini alma fonksiyonunu çağırır.
         }
     }
-    func getAppetizers(){
+    
+    // NetworkManager ile yemek listesini almak için kullanılan fonksiyon.
+    func getAppetizers() {
         NetworkManager.shared.getAppetizers { result in
-            DispatchQueue.main.async{
+            DispatchQueue.main.async {
                 switch result {
                 case .success(let appetizers):
                     self.appetizers = appetizers
@@ -34,6 +42,7 @@ struct AppetizerListView: View {
     }
 }
 
+// Önizleme yapısı, 'AppetizerListView' görünümünü önizler.
 #Preview {
     AppetizerListView()
 }
